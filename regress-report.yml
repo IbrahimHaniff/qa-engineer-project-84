@@ -1,24 +1,24 @@
 ---
 test-cases:
-- summary: |
+ - summary: |
     Проверка добавления товара в корзину
-  status: fail
+   status: fail
 
-- summary: |
+ - summary: |
     Проверка добавления товара в корзину
-  status: pass
+   status: pass
 
 bugreports:
  - summary: |
     Не работает функция оформления заказа
-  environment: |
+   environment: |
     Google Chrome   121.0.6167.185 (Официальная сборка) (64 бит)
     ОС Windows 10 Pro 22H2
-  steps-to-reproduce: |
+   steps-to-reproduce: |
     1. Зайти на страницу логина https://hexlet-products-store.vercel.app/cart
     2. Нажать ссылку «Проверить»
-  expected-result: |
+   expected-result: |
     На странице формы должна быть форма "оформить заказ"
-  actual-result: |
+   actual-result: |
     На странице ничего не происходит
     В консоли браузера в Devtools выводится "Не удалось загрузить ресурс: сервер ответил со статусом 500 ()"
