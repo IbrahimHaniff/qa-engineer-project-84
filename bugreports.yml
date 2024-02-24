@@ -1,16 +1,30 @@
 ---
 - summary: |
-    Не работает восстановление пароля
+    Не работает форма оформления заказа
   environment: |
     Google Chrome   121.0.6167.185 (Официальная сборка) (64 бит)
     ОС Windows 10 Pro 22H2
   steps-to-reproduce: |
-    1. Зайти на страницу логина https://hexlet-products-store.vercel.app/cart
-    2. Нажать ссылку «Проверить»
+    1. Зайти на страницу оформления заказа https://hexlet-products-store.vercel.app/cart
+    2. Нажать на кнопку «Оформить заказа»
   expected-result: |
-    На странице формы должна быть форма "оформить заказ"
+    После оформления заказа, пишет что заказ успешно оформлен, но ничего не проиходит "заказ не отправляется на сервер"
+     В консоли браузера в Devtools выводится "GET https://dummyjson.com/http/500/failed 500 (Internal Server Error)"
+    Ошибка изображена на скриншоте assets/bug.png 
+
+    - summary: |
+    Ощибка отображения лейбла главной старницы
+  environment: |
+    Microsoft Edge
+    Версия 121.0.2277.128 (Официальная сборка) (64-разрядная версия)
+    ОС Windows 10 Pro 22H2
+  steps-to-reproduce: |
+    1. Зайти на страницу сайта https://hexlet-products-store.vercel.app/
+  expected-result: |
+    После проверка на двух браузерах, не корректно отображается лейбл сайта "Магазин Хекслет" 
+    В консоли браузера в Devtools выводится "Incorrect use of <label for=FORM_ELEMENT>
+The label's for attribute doesn't match any element id. This might prevent the browser from correctly autofilling the form and accessibility tools from working correctly."y."
+    Ошибка изображена на скриншоте assets/bug.png
     
-  actual-result: |
-    На странице ничего не происходит
-    В консоли браузера в Devtools выводится "Не удалось загрузить ресурс: сервер ответил со статусом 500 ()"
+
 
