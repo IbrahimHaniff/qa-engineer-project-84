@@ -14,7 +14,7 @@
      В консоли браузера в Devtools выводится "GET https://dummyjson.com/http/500/failed 500 (Internal Server Error)"
     Ошибка изображена на скриншоте assets/bug.png 
 
-    - summary: |
+- summary: |
     Ощибка отображения лейбла на главной странице
   environment: |
     1. Google Chrome   121.0.6167.185 (Официальная сборка) (64 бит)
@@ -29,7 +29,7 @@
   actual-result: |
     После проверка на двух браузерах, не корректно отображается лейбл сайта "Магазин Хекслет" 
     В консоли браузера в Devtools выводится "Incorrect use of <label for=FORM_ELEMENT>
-The label's for attribute doesn't match any element id. This might prevent the browser from correctly autofilling the form and accessibility tools from working correctly."y."
+    The label's for attribute doesn't match any element id. This might prevent the browser from correctly autofilling the form and accessibility tools from working correctly."
     Ошибка изображена на скриншоте png
     
 
